@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".screens.Login">
+
+    <ScrollView
+        android:id="@+id/login_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/login_bg"
+                android:contentDescription="@string/login_bg_desc"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toTopOf="@+id/email_txt"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/password_txt"
+                style="@style/txt_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/password_txt"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/email"
+                tools:ignore="MissingConstraints" />
+
+            <EditText
+                android:id="@+id/email"
+                style="@style/inputStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/edit_text_shape"
+                android:drawableStart="@drawable/email_icon"
+                android:ems="10"
+                android:hint="@string/email_input_hint"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName|textEmailSubject"
+                android:minHeight="48dp"
+                android:textColorHint="@color/hint_color"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.702"
+                tools:ignore="SpeakableTextPresentCheck,TextContrastCheck,DuplicateSpeakableTextCheck" />
+
+            <EditText
+                android:id="@+id/password"
+                style="@style/inputStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/edit_text_shape"
+                android:drawableStart="@drawable/password_icon"
+                android:ems="10"
+                android:hint="@string/password_input_hint"
+                android:importantForAutofill="no"
+                android:inputType="textPassword"
+                android:minHeight="48dp"
+                android:textColorHint="@color/hint_color"
+                app:layout_constraintTop_toBottomOf="@+id/password_txt"
+                tools:ignore="SpeakableTextPresentCheck,TextContrastCheck"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:id="@+id/email_txt"
+                style="@style/txt_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="@string/email_txt"
+                app:layout_constraintBottom_toTopOf="@+id/email"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginStart="@dimen/horizontal_margin"
+                android:layout_marginEnd="@dimen/horizontal_margin"
+                android:paddingTop="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/password"
+                app:layout_constraintVertical_bias="0.168"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="0dp">
+
+                <Button
+                    android:id="@+id/login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/login_btn_txt" />
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/register_btn_txt" />
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

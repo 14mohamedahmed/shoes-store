@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Shoe Store</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="app_bar_txt">Shoe Store</string>
+    <string name="email_input_hint">Enter Email Address</string>
+    <string name="email_txt">Email</string>
+    <string name="password_txt">Password</string>
+    <string name="password_input_hint">******</string>
+    <string name="login_bg_desc">Image description</string>
+    <string name="login_btn_txt">Login</string>
+    <string name="register_btn_txt">Register</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome_header_txt">Welcome to our shoe store</string>
+    <string name="welcome_description">"Shop all perfect gifts for sport and style this Nike holiday season. Nike Member Exclusive products, end of year deals, and more - shop and save as a Nike Member with the latest trends and innovations, available exclusively for you. "</string>
+    <string name="next">Next</string>
+    <string name="instruction_description">"Sell Now "</string>
+    <string name="lets_begin">Let\'s Go</string>
+    <string name="fab_desc">FAB description</string>
+    <string name="logout"> Logout </string>
+    <string name="name">Name</string>
+    <string name="company">Company</string>
+    <string name="size">Size</string>
+    <string name="description">Description</string>
+    <string name="cancel">Cancel</string>
+    <string name="submit">Submit</string>
+</resources>

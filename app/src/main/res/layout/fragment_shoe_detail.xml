@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".screens.ShoeDetail">
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/txt_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.15"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/name_input"
+            style="@style/inputStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/edit_text_shape"
+            android:ems="10"
+            android:hint="@string/name"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck,TextContrastCheck"
+            tools:layout_editor_absoluteX="8dp" />
+
+        <TextView
+            android:id="@+id/shoe_desc"
+            style="@style/txt_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/description"
+            app:layout_constraintTop_toBottomOf="@+id/name_input"
+            tools:layout_editor_absoluteX="8dp" />
+
+        <EditText
+            android:id="@+id/desc_input"
+            style="@style/inputStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/edit_text_shape"
+            android:ems="10"
+            android:hint="@string/description"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            app:layout_constraintTop_toBottomOf="@+id/shoe_desc"
+            tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck"
+            tools:layout_editor_absoluteX="8dp" />
+
+        <TextView
+            android:id="@+id/shoe_company"
+            style="@style/txt_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/company"
+            app:layout_constraintTop_toBottomOf="@+id/desc_input"
+            tools:layout_editor_absoluteX="101dp" />
+
+        <EditText
+            android:id="@+id/company_input"
+            style="@style/inputStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/edit_text_shape"
+            android:ems="10"
+            android:hint="@string/company"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            app:layout_constraintTop_toBottomOf="@+id/shoe_company"
+            tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck,TextContrastCheck,TextContrastCheck"
+            tools:layout_editor_absoluteX="16dp" />
+
+        <TextView
+            android:id="@+id/size_txt"
+            style="@style/txt_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/size"
+            app:layout_constraintTop_toBottomOf="@+id/company_input"
+            tools:layout_editor_absoluteX="8dp" />
+
+        <EditText
+            android:id="@+id/size_input"
+            style="@style/inputStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/edit_text_shape"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:minHeight="48dp"
+            app:layout_constraintTop_toBottomOf="@+id/size_txt"
+            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck"
+            tools:layout_editor_absoluteX="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginHorizontal="@dimen/horizontal_margin"
+            android:paddingTop="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/size_input"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp">
+
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/submit" />
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/cancel" />
+
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
